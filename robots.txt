@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /404.html
+
+Allow: /
+
+# Sitemap: https://missekat.fyi/sitemap.xml
