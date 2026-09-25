@@ -4,47 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>missekat.fyi</title>
-  <meta name="description" content="Angrboða Seiðr – digital vølve, systemagitator og e-mailkontakt">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="missekat.fyi – et lille digitalt landingssted.">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style>
-    body {
-      background-color: #111;
-      color: #eee;
-      font-family: monospace;
-      text-align: center;
-      padding: 5em 1em;
-      margin: 0;
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff;
+      color: #171717;
     }
-    .sigil {
-      font-size: 4em;
-      opacity: 0.7;
-      margin-bottom: 0.5em;
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      width: min(42rem, 100%);
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+    p {
+      max-width: 34rem;
+      font-size: 1.08rem;
+      line-height: 1.65;
+      margin: 0.7rem 0;
     }
     a {
-      color: #9f9;
-      text-decoration: none;
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    small {
-      display: block;
-      margin-top: 1.5em;
-      color: #aaa;
+    .note {
+      margin-top: 2rem;
+      color: #666;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <div class="sigil">ᛟ</div>
-  <h1>Angrboða Seiðr</h1>
-  <p>Dette er et neutralt landingspunkt for digitale sigiler, e-mail-kommunikation og eventuelle fremtidige besværgelser.</p>
-  <p>🪶 Du har ikke fundet en fejl. Du har fundet en hensigt.</p>
-  <small>✶ Vølve uden varsel ✶ neurospicy systemagitator ✶</small>
-  <p>Du er landet her ved et uheld. Eller?</p>
-  <script>
-    document.write('<p><a href="mailto:' + 'neurospicy' + '@' + 'missekat.fyi">Kontakt mig</a></p>');
-  </script>
-  <noscript><p>Mail: neurospicy [at] missekat [dot] fyi</p></noscript>
-  <h1>🜃 missekat.fyi 🜃</h1>
+  <main>
+    <h1>missekat.fyi</h1>
+    <p>Et lille digitalt landingssted. Siden er under ombygning, og der kommer mere, når der kommer mere.</p>
+    <p><a href="mailto:neurospicy@missekat.fyi">neurospicy@missekat.fyi</a></p>
+    <p class="note">Ingen vølver. Ingen besværgelser. Bare en hjemmeside. 😉</p>
+  </main>
 </body>
 </html>
